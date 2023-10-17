@@ -143,17 +143,21 @@
         <h1 id="titulo">Eu Te Amo Amoorrr ❤️❤️❤️<br>
             <span>Feliz Aniversario Lindaaa</h1></span>
         </h1>
-        <button id="botao" onclick="mostrarImagem()">Continuação da Carta..</button>
+        <button id="botao" onclick="mostrarImagem(), musicaPlay()">Continuação da Carta..</button>
     </div>
     <canvas id="my-canvas"></canvas>
     <!-- JAVASCRIPT -->
     <script>
         setTimeout(() => {
+            musicaPlay();
+        }, 1000);
+        
+        function musicaPlay() {
             var audio = document.getElementById('minhaMusica');
             audio.volume = 0.7;
             audio.play();
-        }, 2000);
-        
+        }
+
         function mostrarImagem() {
             var envelope = document.getElementById("envelope");
             var botao = document.getElementById("botao");
