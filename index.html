@@ -145,11 +145,13 @@
         </h1>
         <button id="botao" onclick="mostrarImagem(), musicaPlay()">Continuação da Carta..</button>
     </div>
+
+    <button style="opacity: 0;" id="play" onclick="musicaPlay()">Play</button>
     <canvas id="my-canvas"></canvas>
     <!-- JAVASCRIPT -->
     <script>
         setTimeout(() => {
-            var botao = document.querySelector('botao');
+            var botao = document.querySelector('play');
             botao.click();
         }, 2000);
         
