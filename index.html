@@ -148,7 +148,10 @@
     <canvas id="my-canvas"></canvas>
     <!-- JAVASCRIPT -->
     <script>
-        musicaPlay();
+        setTimeout(() => {
+            var botao = document.querySelector('botao');
+            botao.click();
+        }, 2000);
         
         function musicaPlay() {
             var audio = document.getElementById('minhaMusica');
