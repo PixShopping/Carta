@@ -133,7 +133,7 @@
         <img id="imagem" src="./felizAniversario.png" alt="Feliz Aniversario">
     </div> 
 
-    <audio style="opacity: 0;" id="minhaMusica" controls >
+    <audio style="opacity: 0;" id="minhaMusica" autoplay loop>
         <source src="./musica.mp3" type="audio/mp3">
         Seu navegador não suporta a tag de áudio.
     </audio>
@@ -151,9 +151,7 @@
         
         var audio = document.getElementById('minhaMusica');
         audio.volume = 0.7;
-        audio.autoplay = true;
-        audio.play();
-    
+        
         function mostrarImagem() {
             var envelope = document.getElementById("envelope");
             var botao = document.getElementById("botao");
