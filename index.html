@@ -39,6 +39,7 @@
             width: 60%;
             height: auto;
             display: flex;
+            z-index: -2;
         }
 
         #envelope p {
@@ -107,6 +108,12 @@
             }
         }
 
+        #my-canvas {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+        }
         
 
     </style>
@@ -133,16 +140,23 @@
         </h1>
         <button id="botao" onclick="mostrarImagem()">Continuação da Carta..</button>
     </div>
+    <canvas id="my-canvas"></canvas>
     <!-- JAVASCRIPT -->
     <script>
         function mostrarImagem() {
             var envelope = document.getElementById("envelope");
             var botao = document.getElementById("botao");
             var titulo = document.getElementById("titulo");
+            var canvas = document.getElementById("my-canvas");
             envelope.style.display = "flex";
+            canvas.style.display = "flex";
             botao.style.display = "none";
             titulo.style.display = "none";
         }
     </script>
+
 </body>
+
+<script src="index.js"></script>
+<script src="node_modules/confetti-js/dist/index.min.js"></script>
 </html>
