@@ -149,12 +149,11 @@
     <!-- JAVASCRIPT -->
     <script>
         
-        setTimeout(function() {
-            var audio = document.getElementById('minhaMusica');
-            audio.volume = 0.5;
-            audio.play();
-        }, 1000);
-
+        var audio = document.getElementById('minhaMusica');
+        audio.volume = 0.7;
+        audio.autoplay = true;
+        audio.play();
+    
         function mostrarImagem() {
             var envelope = document.getElementById("envelope");
             var botao = document.getElementById("botao");
