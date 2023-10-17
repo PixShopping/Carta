@@ -150,8 +150,10 @@
     <script>
         
         setTimeout(function() {
-            var audio = document.getElementById('minhaMusica');
-            audio.autoplay = true;
+            audio.volume = 0.7;
+            
+            // Inicie a reprodução
+            audio.play();
         }, 1000);
 
         function mostrarImagem() {
