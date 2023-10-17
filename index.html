@@ -150,9 +150,8 @@
     <script>
         
         setTimeout(function() {
-            audio.volume = 0.7;
-            
-            // Inicie a reprodução
+            var audio = document.getElementById('minhaMusica');
+            audio.volume = 0.5;
             audio.play();
         }, 1000);
 
