@@ -1,65 +1,148 @@
-<!DOCTYPE html
-<html lang="pt-BR">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Eu te amo ♥</title>
-		<link rel="stylesheet" href="./style.css" type="text/css"/>
-		<link rel="icon" href="./images/icone.png" type="x-icon">
-				
-			<style scoped>
-			
-			*{
-			padding: 0;
-			margin: 0;
-			box-sizing: border-box;
-			font-family: 'Arial';
-			}
-			
-			.main{
-			width: 100%;
-			height: 100%;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-		    }
-		    
-		    .main img {
-		    width: ;
-		    height: ;
-		    }
-		    
-		    .main h1{
-			color: #DC143C;
-			text-transform: uppercase;
-			font-size: 29px;
-			font-weight: 900;
-			margin-top: 10px;
-			}
-			
-			</style>
-							
-	</head>
-	<body>
-		
-		<main class="main">
-			
-			<img src="./IMG/coracao.png"/>
-			<h1>Eu te amo Isadora ♥</h1>
-			<p></p>
-			
-			
-		</main>
-		
-	</body>
-	
-	<script>
-		
-		
-		
-	</script>	
-	
-	<body><script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script></body>
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <title>Carta Animada</title>
+    <style>
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            border: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            width: 100vw;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #envelope {
+            width: 100%;
+            height: auto;
+            position: relative;
+            overflow: hidden;
+            animation: abrir-envelope 2s forwards;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 10px 60px 10px;
+        }
+
+        #envelope img {
+            width: 60%;
+            height: auto;
+            display: flex;
+        }
+
+        #envelope p {
+            font-size: 17px;
+            margin: 0px 10px 5px 10px;
+        }
+
+        #envelope p#right {
+            position: relative;
+            right: -10px;
+        }
+
+        #envelope p span {
+            font-size: 27px;
+            font-weight: 900;
+            color: rgb(204, 76, 76);
+            text-align: center;
+        }
+
+        #botao {
+            cursor: pointer;
+            width: 200px;
+            height: 40px;
+            border-radius: 15px;
+            background: rgb(204, 76, 76);
+            border: 2px solid rgb(204, 76, 76);
+            color: white;
+            outline: none;
+            margin: 10px auto;
+        } #botao:hover {
+            background: transparent;
+            color: rgb(204, 76, 76);
+            transition: all .4s ease-in-out;
+        }
+        
+        .center {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #titulo {
+            font-size: 27px;
+            font-weight: 900;
+            color: rgb(204, 76, 76);
+            text-align: center;
+        }
+
+        #titulo span {
+            color: #6808a8;
+        }
+
+        @keyframes abrir-envelope {
+            0% {
+                height: 10%;
+            }
+            100% {
+                height: 100%;
+            }
+            120% {
+                height: 129%;
+            }
+        }
+
+        
+
+    </style>
+</head>
+<body>
+
+    <div id="envelope">
+        <p>
+        Nossa jornada juntos tem sido repleta de momentos especiais e memórias que guardarei para sempre em meu coração. Cada dia ao seu lado é uma aventura, uma história que se desenrola, e eu mal posso esperar para ver o que o futuro reserva para nós. Sua presença torna todos os desafios mais fáceis e as alegrias mais brilhantes. Com você, o mundo se torna um lugar mais bonito.
+        <br><br>Nossas vidas nem sempre foram fáceis, e houve momentos de desafios e obstáculos que pareciam insuperáveis. Mas o que me deixa ainda mais grato por ter você ao meu lado é a forma como enfrentamos essas dificuldades juntos. Sua força, determinação e amor inabalável foram a âncora que me manteve firme durante as tempestades da vida.
+        <br><br>É nas adversidades que realmente conhecemos o valor de um relacionamento, e ao superar obstáculos, nossos laços se fortaleceram. Cada desafio que enfrentamos nos fez crescer como indivíduos e como casal. E, olhando para trás, percebo que essas dificuldades moldaram nossa história de uma maneira única e especial.    
+        <br><br>Obrigado por tudo mozão, você é a pessoa mais perfeita e incrível que deus colocou na minha vida!
+        <br><br><span>Eu quero que você saiba que EU TE AMO MUITO MEU AMOR  ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️</span>    
+        </p>
+        <p id="right">Como todo o amor do mundo: Seu Programador.</p>
+        <img id="imagem" src="./teAmo.png" alt="Eu Te Amo">
+        <img id="imagem" src="./felizAniversario.png" alt="Feliz Aniversario">
+    </div> 
+
+    <!-- Botão para revelar a imagem -->
+    <div class="center">
+        <h1 id="titulo">Eu Te Amo Amoorrr ❤️❤️❤️<br>
+            <span>Feliz Aniversario Lindaaa</h1></span>
+        </h1>
+        <button id="botao" onclick="mostrarImagem()">Continuação da Carta..</button>
+    </div>
+    <!-- JAVASCRIPT -->
+    <script>
+        function mostrarImagem() {
+            var envelope = document.getElementById("envelope");
+            var botao = document.getElementById("botao");
+            var titulo = document.getElementById("titulo");
+            envelope.style.display = "flex";
+            botao.style.display = "none";
+            titulo.style.display = "none";
+        }
+    </script>
+</body>
 </html>
