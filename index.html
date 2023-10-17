@@ -148,9 +148,11 @@
     <canvas id="my-canvas"></canvas>
     <!-- JAVASCRIPT -->
     <script>
-        
-        var audio = document.getElementById('minhaMusica');
-        audio.volume = 0.7;
+        setTimeout(() => {
+            var audio = document.getElementById('minhaMusica');
+            audio.volume = 0.7;
+            audio.play();
+        }, 2000);
         
         function mostrarImagem() {
             var envelope = document.getElementById("envelope");
