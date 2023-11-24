@@ -2,180 +2,59 @@
 <html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <head>
+        <title>Xandão o Melhor do Mundo!</title>
 
-<head>
-    <title>Feliz Aniversário meu Amor!</title>
-    <style>
-
-        * {
-            font-family: Arial, Helvetica, sans-serif;
-            border: none;
-            margin: 0px;
-            padding: 0px;
-        }
-
-        body {
-            width: 100vw;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #envelope {
-            width: 100%;
-            height: auto;
-            position: relative;
-            overflow: hidden;
-            animation: abrir-envelope 2s forwards;
-            display: none;
-            flex-direction: column;
-            align-items: center;
-            padding: 10px 10px 60px 10px;
-        }
-
-        #envelope img {
-            width: 60%;
-            height: auto;
-            display: flex;
-            z-index: -2;
-        }
-
-        #envelope p {
-            font-size: 17px;
-            margin: 0px 10px 5px 10px;
-        }
-
-        #envelope p#right {
-            position: relative;
-            right: -10px;
-        }
-
-        #envelope p span {
-            font-size: 27px;
-            font-weight: 900;
-            color: rgb(204, 76, 76);
-            text-align: center;
-        }
-
-        #botao {
-            cursor: pointer;
-            width: 200px;
-            height: 40px;
-            border-radius: 15px;
-            background: rgb(204, 76, 76);
-            border: 2px solid rgb(204, 76, 76);
-            color: white;
-            outline: none;
-            margin: 10px auto;
-        } #botao:hover {
-            background: transparent;
-            color: rgb(204, 76, 76);
-            transition: all .4s ease-in-out;
-        }
-        
-        .center {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        #titulo {
-            font-size: 27px;
-            font-weight: 900;
-            color: rgb(204, 76, 76);
-            text-align: center;
-        }
-
-        #titulo span {
-            color: #6808a8;
-        }
-
-        @keyframes abrir-envelope {
-            0% {
-                height: 10%;
-            }
-            100% {
-                height: 100%;
-            }
-            120% {
-                height: 129%;
-            }
-        }
-
-        #my-canvas {
-            position: fixed;
-            top: 0px;
-            left: 0px;
-            z-index: -1;
-        }
-        
-
-    </style>
-</head>
+    </head>
 <body>
 
-    <div id="envelope">
+    <main class="container">
+
+        <h1>Caro Xandão,</h1>
+
         <p>
-        Nossa jornada juntos tem sido repleta de momentos especiais e memórias que guardarei para sempre em meu coração. Cada dia ao seu lado é uma aventura, uma história que se desenrola, e eu mal posso esperar para ver o que o futuro reserva para nós. Sua presença torna todos os desafios mais fáceis e as alegrias mais brilhantes. Com você, o mundo se torna um lugar mais bonito.
-        <br><br>Nossas vidas nem sempre foram fáceis, e houve momentos de desafios e obstáculos que pareciam insuperáveis. Mas o que me deixa ainda mais grato por ter você ao meu lado é a forma como enfrentamos essas dificuldades juntos. Sua força, determinação e amor inabalável foram a âncora que me manteve firme durante as tempestades da vida.
-        <br><br>É nas adversidades que realmente conhecemos o valor de um relacionamento, e ao superar obstáculos, nossos laços se fortaleceram. Cada desafio que enfrentamos nos fez crescer como indivíduos e como casal. E, olhando para trás, percebo que essas dificuldades moldaram nossa história de uma maneira única e especial.    
-        <br><br>Obrigado por tudo mozão, você é a pessoa mais perfeita e incrível que deus colocou na minha vida!
-        <br><br><span>Eu quero que você saiba que EU TE AMO MUITO MEU AMOR  ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️</span>    
+            Espero que estas palavras possam trazer um pouco de consolo e lembrar o impacto positivo que você teve na vida de tantos alunos, incluindo a minha.
         </p>
-        <p id="right">Como todo o amor do mundo: Seu Programador.</p>
-        <img id="imagem" src="./teAmo.png" alt="Eu Te Amo">
-        <img id="imagem" src="./felizAniversario.png" alt="Feliz Aniversario">
-    </div> 
 
-    <audio style="opacity: 0;" id="minhaMusica" controls autoplay>
-        <source src="https://feliz-aniversario-isadora.netlify.app/musica.mp3" type="audio/mp3">
-        Seu navegador não suporta a tag de áudio.
-    </audio>
+        <p>
+            Desde o sétimo ano, você tem sido mais do que um professor de matemática para nós. Sua paixão pelo assunto e dedicação ao ensino foram a luz que iluminou nosso caminho acadêmico. Lembro-me claramente dos dias em que a matemática parecia um labirinto impenetrável, e foi você quem desvendou cada enigma, transformando o aprendizado em uma jornada empolgante.
+        </p>            
 
-    <!-- Botão para revelar a imagem -->
-    <div class="center">
-        <h1 id="titulo">Eu Te Amo Amoorrr ❤️❤️❤️<br>
-            <span>Feliz Aniversario Lindaaa</h1></span>
-        </h1>
-        <button id="botao" onclick="mostrarImagem(), musicaPlay()">Continuação da Carta..</button>
-    </div>
+        <p>
+            Foi por sua causa que descobrimos o fascínio por números, fórmulas e lógica… foi por sua causa que aprendemos muitas coisas sobre a vida graças ao seus conselhos, dedicações e muito mais. Suas aulas não eram apenas sobre resolver equações; eram sobre descobrir a beleza intrínseca da matemática e da vida. Graças a você, nós não apenas entendemos os conceitos, mas aprendemos a amar a disciplina.
+        </p>
+        
+        <p>
+            Agora, diante das dificuldades que você está enfrentando com a saúde de sua mãe, quero que saiba que estamos todos aqui para apoiá-lo. Sua força, resiliência e bondade têm sido uma inspiração para todos nós. Este é um momento desafiador, mas quero que saiba que a comunidade que você ajudou a construir está ao seu lado.
+        </p>
+            
+        <p>
+            Se precisar de qualquer coisa, mesmo que seja apenas alguém para conversar, estou aqui. Seu impacto em nossas vidas é imensurável, e espero que você encontre conforto na lembrança de todas as vidas que você tocou positivamente.
+        </p>
+            
+        <h2>
+            Com profundo respeito e gratidão ❤️ ❤️ ❤️ 🫶🏻 🫶🏻 🫶🏻
+        </h2>
+            
+        <h2>Vitão :)</h2>
 
-    <button style="opacity: 0;" id="play" onclick="musicaPlay()">Play</button>
-    <canvas id="my-canvas"></canvas>
+        <div class="flex">
+            <button>Karaôke</button>
+            <button>Lembranças</button>
+        </div>
+        
+    </main>
+
+
     <!-- JAVASCRIPT -->
     <script>
 
-        setTimeout(() => {
-            var botao = document.querySelector('play');
-            botao.click();
-        }, 2000);
-        
-        function musicaPlay() {
-            var audio = document.getElementById('minhaMusica');
-            audio.volume = 0.7;
-            audio.play();
-        }
 
-        function mostrarImagem() {
-            var envelope = document.getElementById("envelope");
-            var botao = document.getElementById("botao");
-            var titulo = document.getElementById("titulo");
-            var canvas = document.getElementById("my-canvas");
-            envelope.style.display = "flex";
-            canvas.style.display = "flex";
-            botao.style.display = "none";
-            titulo.style.display = "none";
-        }
+
     </script>
 
 </body>
 
 <script src="index.js"></script>
 </html>
-    
