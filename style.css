@@ -16,6 +16,7 @@ body {
     color: #002242;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 0px 0px 50px 0px;
 }
 
 .container {
@@ -74,4 +75,89 @@ button {
     box-shadow: 0px 5px 15px #00ccff;
     background: linear-gradient(-135deg, #053e74, #00ccff);
     transition: all .2s ease-in-out;
+}
+
+.lembranca {
+    width: 95vw;
+    height: auto;
+    min-height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.lembranca h1 {
+    width: 95%;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    margin: 7px 0px;
+    text-align: center;
+}
+
+.lembranca img {
+    width: 95%;
+    max-width: 500px;
+    height: auto;
+    margin: 20px 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #002242;
+}
+
+.aulas {
+    width: 95vw;
+    height: auto;
+    min-height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px 20px 0px;
+}
+
+.aulas h1 {
+    width: 95%;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    margin: 18px 0px 10px 0px; 
+    text-align: center;
+}
+
+.aulas button {
+    width: 80%;
+    max-width: none;
+    height: auto;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 17px 10px;
+    padding: 15px;
+    color: #002242;
+    background: linear-gradient(35deg, #053e74, #00ccff);
+    border: 2.5px solid #002242;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px #002242;
+} .aulas button:hover {
+    box-shadow: 0px 5px 15px #00ccff;
+    background: linear-gradient(-135deg, #053e74, #00ccff);
+    transition: all .2s ease-in-out;
+}
+
+.aulas .voltar {
+    width: 85%;
+    max-width: 180px;
+    height: 42px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0px;
+    margin: 22px 10px;
+    color: #002242;
+    background: linear-gradient(35deg, #053e74, #00ccff);
+    border: 2.5px solid #002242;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px #002242;
 }

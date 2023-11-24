@@ -40,17 +40,70 @@
         <h2>Vitão :)</h2>
 
         <div class="flex">
-            <button>Karaôke</button>
-            <button>Lembranças</button>
+            <button onclick="lembranca()">Lembranças</button>
+            <button onclick="aulas()">Ultimas aulas</button>
         </div>
         
     </main>
+
+    <section class="lembranca">
+
+        <h1>Seus Momentos Felizes com a gente</h1>
+        
+        <img src="./img/trote.jpeg">
+        <img src="./img/festaJunina.jpeg">
+        <img src="./img/cavalo.jpeg">
+
+        <button onclick="voltar()">Voltar</button>
+
+    </section>
+
+    <section class="aulas">
+
+        <h1>Ultimas Aulas</h1>
+
+        <button onclick="abrirAULA('aula20')">Aula 20 | Volume de prismas e cilindros - I</button>
+        <button onclick="abrirAULA('aula21')">Aula 21 | Volume de prismas e cilindros - II</button>
+        <button onclick="abrirAULA('aula22')">Aula 22 | Volume de prismas e cilindros III</button>
+        <button onclick="abrirAULA('aula23')">Aula 23 | Situações-problema envolvendo volume de prismas e cilindros </button>
+        <button onclick="abrirAULA('aula24')">Aula 24 | Volume de prismas e cilindros KHAN ACADEMY</button>
+        <button onclick="abrirAULA('aula25')">Aula 25 | Probabilidade </button>
+
+        <button class="voltar" onclick="voltar()">Voltar</button>
+
+    </section>
 
 
     <!-- JAVASCRIPT -->
     <script>
 
+    function abrirAULA(aula) {
+        window.location.href = `./aulas/${aula}.pdf`;
+    }
 
+
+    function lembranca() {
+        const container = document.querySelector('.container');
+        const lembranca = document.querySelector('.lembranca');  
+        container.style.display = "none";
+        lembranca.style.display = "flex";
+    }
+
+    function aulas() {
+        const container = document.querySelector('.container');
+        const aulas = document.querySelector('.aulas');  
+        container.style.display = "none";
+        aulas.style.display = "flex";
+    }
+
+    function voltar() {
+        const container = document.querySelector('.container');
+        const lembranca = document.querySelector('.lembranca');  
+        const aulas = document.querySelector('.aulas');  
+        container.style.display = "flex";
+        aulas.style.display = "none";
+        lembranca.style.display = "none";
+    }
 
     </script>
 
